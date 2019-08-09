@@ -21,7 +21,7 @@ class Artist
   end
   
   def genres 
-    self.all.genre.map {|song_genre| song_genre.genre}
+    song.map {|song_genre| song_genre.genre}
   end 
   
 end
